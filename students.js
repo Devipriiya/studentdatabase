@@ -1,9 +1,9 @@
 import express from "express";
 
 import mongoose from "mongoose";
-import connectDB from "./studentsdb.js";
+// import connectDB from "./studentsdb.js";
 const router =express.Router();
-connectDB();
+// connectDB();
 // Students
 const studentsSchema=mongoose.Schema(
     {
@@ -167,8 +167,8 @@ router.put('/:id',(req,res)=>{
         })
 
         export default router;
-        const port=4000;
-        app.listen(port,()=>{
-            console.log(`server is running at ${port}`);
-            console.log(students);
-        });
+        // const port=4000;
+        // app.listen(port,()=>{
+        //     console.log(`server is running at ${port}`);
+        //     console.log(students);
+        // });
